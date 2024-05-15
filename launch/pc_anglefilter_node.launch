@@ -1,0 +1,5 @@
+<launch>
+    <node name="pc_anglefilter_node" pkg="pc_anglefilter_node" type="filterbyAngle.py" output="screen">
+        <!-- Modify 'your_package_name' and 'your_node_script.py' to reflect your actual package name and script name -->
+    </node>
+</launch>
