@@ -1,0 +1,9 @@
+<launch>
+  <!-- olei pc filter -->
+  <include file="$(find pc_anglefilter_node)launch/pc_anglefilter_node.launch"/>
+  <!-- livox pc filter -->
+  <include file="$(find pc_anglefilter_node)launch/pc_anglefilter_node.launch">
+    <arg name="ns" value="livox" />
+    <arg name="input_topic_name" value="/livox/lidar" />
+  </include>
+</launch>

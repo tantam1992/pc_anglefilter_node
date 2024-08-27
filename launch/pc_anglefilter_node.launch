@@ -1,5 +1,7 @@
 <launch>
-    <node name="pc_anglefilter_node" pkg="pc_anglefilter_node" type="filterbyAngle.py" output="screen">
-        <!-- Modify 'your_package_name' and 'your_node_script.py' to reflect your actual package name and script name -->
+    <node name="pc_anglefilter_node" pkg="pc_anglefilter_node" type="filterbyAngle_olei.py" ns="olei">
+    </node>
+    
+    <node name="pc_anglefilter_node" pkg="pc_anglefilter_node" type="filterbyAngle_livox.py" ns="livox">
     </node>
 </launch>
